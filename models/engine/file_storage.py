@@ -2,6 +2,7 @@
 """Class FileStorage"""
 import json
 from os.path import exists
+from models.user import User
 
 
 class FileStorage:
@@ -25,11 +26,11 @@ class FileStorage:
         """serializes __objects to the JSON file """
         new_obj = {}
         for key, val in FileStorage.__objects.items():
-            objects_dict[key] = val.to_dict()
+            new_obj[key] = val.to_dict()
         #for key, value in self.__objects.items():
             #new_obj[key] = value
         with open(FileStorage.__file_path, mode='w', encoding="UTF8") as f:
-            json.dump(objects_dict, f)
+            json.dump(new_obj, f)
         #with open(self.__file_path, 'w') as f:
             #json.dump(new_obj, f)
 
