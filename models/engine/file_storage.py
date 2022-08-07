@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Class FileStorage"""
 import json
 from os.path import exists
