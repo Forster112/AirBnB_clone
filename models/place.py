@@ -4,7 +4,14 @@ from models.base_model import BaseModel
 
 
 class Place(BaseModel):
-    """class holding the location"""
+    """class holding the location
+        str[city_id, user_id, name, description]
+        int[number_rooms, number_bathrooms, max_guest
+            price_by_night]
+        float[latitude, longitude]
+        list[amenity_ids]
+    """
+
     city_id = ""
     user_id = ""
     name = ""
