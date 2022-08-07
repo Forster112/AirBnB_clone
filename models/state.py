@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-from models.base_model import BaseModel
 """Initializes the state class"""
+from models.base_model import BaseModel
 
 
 class State(BaseModel):
-    """class holding the name of the state"""
+    """class holding the name of the state
+        name(str): name of the state
+    """
+
     name = ""

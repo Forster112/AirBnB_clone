@@ -1,9 +1,9 @@
 #!/usr/bin/python3
+"""class BaseModel"""
 from time import strptime
 import uuid
 from datetime import datetime
 from models import storage
-"""class BaseModel"""
 
 
 class BaseModel:
