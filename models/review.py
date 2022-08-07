@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-from models.base_model import BaseModel
 """Initializes the review class"""
+from models.base_model import BaseModel
 
 
 class Review(BaseModel):
